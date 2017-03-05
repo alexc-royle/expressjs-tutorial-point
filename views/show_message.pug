@@ -1,0 +1,17 @@
+html
+	head
+		title
+			Person
+	body
+		if(type=="error")
+			h3 Oh no
+			p #{message}. Person did not get created!
+		else
+			h3 Woohoo
+			p #{message}
+			ul
+				li Name: #{person.name}
+				li Age: #{person.age}
+				li Nationality: #{person.nationality}
+
+			

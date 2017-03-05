@@ -1,0 +1,19 @@
+html
+	head
+		title All People
+	body
+		h2 All People
+		p 
+			a(href = '/person/add') Add person
+		table
+			tr
+				th Name
+				th Details
+				th Update
+				th Delete
+			each person in people
+				tr
+					td #{person.name}
+					td details
+					td update
+					td delete
