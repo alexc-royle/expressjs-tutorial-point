@@ -9,9 +9,13 @@ html
 		else
 			h3 Woohoo
 			p #{message}
-			ul
-				li Name: #{person.name}
-				li Age: #{person.age}
-				li Nationality: #{person.nationality}
+			if(person)
+				ul
+					li Name: #{person.name}
+					li Age: #{person.age}
+					li Nationality: #{person.nationality}
+		if(url)
+			p
+				a(href=url) Continue
 
 			

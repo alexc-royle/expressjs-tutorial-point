@@ -2,17 +2,18 @@ html
 	head
 		title Person
 	body
-		form(action="/person/add", method="post")
+		form(action="/person/update", method="post")
 			div
+				input(name="id" type="hidden" value=person.id)
 				label(for="name") Name:
-				input(name="name")
+				input(name="name" value=person.name)
 			br
 			div
 				label(for="age") Age:
-				input(name="age")
+				input(name="age" value=person.age)
 			br
 			div
 				label(for="nationality") Nationality:
-				input(name="nationality")
+				input(name="nationality" value=person.nationality)
 			br
-			button(type="submit") Create new person
+			button(type="submit") Edit person
